@@ -1,0 +1,20 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "electron": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^14.0.0"
+  },
+  "dependencies": {
+    "socket.io": "^4.2.0",
+    "socket.io-client": "^4.2.0"
+  }
+}

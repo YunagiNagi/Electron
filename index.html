@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Hello World!</title>
+    <script src="http://localhost:3000/js/mediasoup-client.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div>
+      <button id="media_button">Select Media</button>
+      <button id="start_video_button">Start Media</button>
+      <button id="stop_video_button">Stop Media</button>
+      &nbsp;
+      <button id="publish_button" onclick="publish();">publish</button>
+      <button id="subscribe_button" onclick="subscribe();">Subscribe</button>
+      <button id="disconnect_button" onclick="disconnect();">Disconnect</button>
+    </div>
+    <div>
+      <div id="media_container"></div>
+    </div>
+    <div>
+      <video id="local_video" autoplay></video>
+      <span id="state_span"></span>
+    </div>
+    <div>
+      <div id="remote_container"></div>
+    </div>
+
+    <script src="./render.js"></script>
+  </body>
+</html>

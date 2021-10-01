@@ -1,0 +1,20 @@
+#local_video {
+  width: 90%; 
+  margin: 5%;
+  border: 1px solid black;
+}
+
+#media_container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.media_source {
+  width: 20%;
+  margin: 16px;
+}
+.media_source > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
